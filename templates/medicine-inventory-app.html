@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Medicine Inventory with Reminder Alarm</title>
+  <link rel="stylesheet" href="../static/medicine.css">
+  <link rel="stylesheet" href="../static/styles.css"> <!-- Include your CSS file -->
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../static/images/medimate-logo.jpg" class="widget_button"/>
+    </div> 
+    <h2>ChatBot</h2>
+    <!-- Message Display and Input -->
+    <div class="message-container">
+      <div class="message-box" id="messageBox">
+        <!-- Messages will be displayed here -->
+      </div>
+      <input type="text" id="userInput" placeholder="Type your message...">
+      <button id="sendButton" onclick="sendMessage()">Send</button>
+    </div>
+
+    <h2>Medicine Inventory</h2>
+    <form class="form" id="medicineForm" onsubmit="addMedicine(event)">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity">
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="location">Storage Location:</label>
+        <input type="text" id="location" name="location">
+      </div>
+      <button type="submit" class="btn-add">Add Medicine</button>
+    </form>
+    <div class="search">
+      <label for="search">Search by Name or Description:</label>
+      <input type="text" id="search" name="search">
+    </div>
+    <table class="inventory-table">
+      <thead>
+        <tr>
+          <th>Sno.</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Storage Location</th> <!-- New column for storage location -->
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Medicine inventory data will go here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Reminder Alarm -->
+  <div class="container reminder-container">
+    <h2 class="reminder-header">Reminder Alarm</h2>
+    <form class="reminder-form" id="reminderForm" onsubmit="setReminder(event)">
+      <label for="reminderDate">Reminder Date:</label>
+      <input type="date" id="reminderDate" required>
+      <label for="reminderTime">Reminder Time:</label>
+      <input type="time" id="reminderTime" required>
+      <label for="reminderMessage">Reminder Message:</label>
+      <input type="text" id="reminderMessage" placeholder="Enter your reminder message" required>
+      <!-- Add the label and select for reminder frequency here -->
+      <div class="select-container">
+        <label for="reminderFrequency">Reminder Frequency:</label>
+        <select id="reminderFrequency" class="frequency">
+          <option value="">Select the Frequency</option>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="hourly">Hourly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+        <div class="icon-container">
+          <i class="fa fa-caret-down"></i>
+        </div>
+      </div>
+      <button onclick="setReminder()">Set Reminder</button>
+    </form>
+
+    <table class="reminder-table" id="reminderTable">
+      <thead>
+        <tr>
+          <th>Date & Time</th>
+          <th>Message</th>
+          <th>Frequency</th> <!-- New column for frequency -->
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Reminders will be added here dynamically -->
+      </tbody>
+    </table>
+  </div>
+  <script src="../static/script.js"></script>
+</body>
+</html>

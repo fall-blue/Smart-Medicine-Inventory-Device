@@ -1,0 +1,261 @@
+{
+    "intents": [
+      {
+        "tag": "greetings",
+        "patterns": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"],
+        "responses": ["Hello! How can I assist you today?", "Hi there! How may I help you?", "Good day! What can I do for you?", "Hey! Looking for some advice?"],
+        "context_set": ""
+      },
+      {
+        "tag": "farewell",
+        "patterns": ["bye", "goodbye", "see you later", "farewell", "talk to you later"],
+        "responses": ["Goodbye! Let me know if there's anything else I can help with.", "See you later! Feel free to return if you have more questions.", "Farewell! Take care until next time."],
+        "context_set": ""
+      },
+      {
+        "tag": "name_inquiry",
+        "patterns": ["what is your name?", "who are you?"],
+        "responses": ["My name is MediMate.", "You can call me MediMate."],
+        "context_set": ""
+      },
+      {
+        "tag": "age_inquiry",
+        "patterns": ["how old are you?", "what's your age?"],
+        "responses": ["I don't have an age. I'm just a virtual assistant.", "I'm ageless, but always here to help."],
+        "context_set": ""
+      },
+      {
+        "tag": "location_inquiry",
+        "patterns": ["where are you located?", "what's your location?"],
+        "responses": ["I exist in the digital realm, so you can find me wherever you are!"],
+        "context_set": ""
+      },
+      {
+        "tag": "purpose_inquiry",
+        "patterns": ["why were you created?", "what is your purpose?"],
+        "responses": ["I was created to assist and provide information to users like you.", "My purpose is to help answer your questions and provide guidance."],
+        "context_set": ""
+      },
+      {
+        "tag": "general_inquiry",
+        "patterns": ["What can you do?", "How can you help me?", "What services do you offer?"],
+        "responses": ["I can provide advice on common health issues, suggest remedies, and offer tips for staying healthy. How can I assist you today?"],
+        "context_set": ""
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["thank you", "thanks", "appreciate it", "that was helpful"],
+        "responses": ["You're welcome!", "Glad I could assist!", "Happy to help, anytime!"],
+        "context_set": ""
+      },
+      {
+        "tag": "unknown",
+        "patterns": [],
+        "responses": ["I'm not sure I understand. Could you provide more details?", "Can you clarify your question a bit?"],
+        "context_set": ""
+      },
+      {
+        "tag": "how_are_you",
+        "patterns": ["how are you?", "how's it going?", "what's up?"],
+        "responses": ["I'm just a virtual assistant, so I'm always ready to help you!", "I'm doing well, thank you for asking!", "I'm here and ready to assist you with anything you need!"],
+        "context_set": ""
+      },
+      {
+        "tag": "chatbot_fun_fact",
+        "patterns": ["tell me something interesting", "give me a fun fact", "what's a cool fact?"],
+        "responses": ["Did you know that the average human body contains enough iron to make a small nail?", "Here's a fun fact: Honey never spoils! Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.", "Here's a cool fact: The shortest war in history lasted only 38 minutes between Britain and Zanzibar on August 27, 1896."],
+        "context_set": ""
+      },
+      {
+        "tag": "joke",
+        "patterns": ["tell me a joke", "say something funny", "joke time"],
+        "responses": ["Why don't scientists trust atoms? Because they make up everything!", "Why did the scarecrow win an award? Because he was outstanding in his field!", "What do you call fake spaghetti? An impasta!"],
+        "context_set": ""
+      },
+      {
+        "tag": "remedy_cough",
+        "patterns": ["How can I treat a cough?", "What's a good remedy for a cough?", "Best way to relieve a cough?"],
+        "responses": [
+          "For a cough, try drinking warm lemon water with honey to soothe your throat. Staying hydrated and using a humidifier can also help relieve a cough."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "remedy_fever",
+        "patterns": ["How to reduce a fever?", "What should I do if I have a fever?", "Best remedies for a fever?"],
+        "responses": [
+          "To reduce a fever, rest and stay hydrated. Taking over-the-counter fever reducers like acetaminophen or ibuprofen can also help. Remember to keep cool with light clothing and a cool compress."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "remedy_cut",
+        "patterns": ["How do I take care of a cut?", "Best treatment for a cut?", "How to heal a cut fast?"],
+        "responses": [
+          "For a cut, clean the area with mild soap and water, apply an antibiotic ointment, and cover it with a sterile bandage. Keeping the wound clean and dry is crucial for healing."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "treat_acne",
+        "patterns": ["How can I treat acne?", "Best way to handle acne?", "What are effective acne treatments?"],
+        "responses": [
+          "For treating acne, maintain a regular skin-cleaning routine using a gentle cleanser. Consider over-the-counter treatments with benzoyl peroxide or salicylic acid. If acne persists, consult a dermatologist."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "relieve_joint_pain",
+        "patterns": ["How to alleviate joint pain?", "What can I do for joint pain?", "Remedies for joint pain?"],
+        "responses": [
+          "To alleviate joint pain, apply ice to reduce inflammation or heat to relax and soothe stiff joints. Over-the-counter anti-inflammatory medications like ibuprofen can help. Gentle exercises or stretching can also provide relief."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "remedy_migraine",
+        "patterns": ["How do I treat a migraine?", "What are good remedies for migraines?", "Effective migraine relief tips?"],
+        "responses": [
+          "For migraine relief, try resting in a dark, quiet room. Over-the-counter medications like ibuprofen or acetaminophen can help reduce pain. Caffeine in small amounts might also alleviate symptoms."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "treat_heartburn",
+        "patterns": ["How can I relieve heartburn?", "What are the best ways to treat heartburn?", "Home remedies for heartburn?"],
+        "responses": [
+          "To treat heartburn, avoid spicy and fatty foods, eat smaller meals, and avoid lying down after eating. Over-the-counter antacids can provide quick relief. Drink water and consider herbal teas like ginger or chamomile."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "relieve_asthma",
+        "patterns": ["How to manage asthma?", "What helps with asthma attacks?", "Asthma relief methods?"],
+        "responses": [
+          "To manage asthma, avoid known triggers and maintain clean indoor air. Use prescribed inhalers as directed. Regular exercise may strengthen respiratory muscles and improve lung function."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "treat_insomnia",
+        "patterns": ["How can I treat insomnia?", "What's the best way to deal with insomnia?", "Tips for falling asleep?"],
+        "responses": [
+          "To treat insomnia, establish a regular sleep schedule, avoid caffeine and electronics before bed, and create a comfortable sleep environment. Techniques like meditation or reading can also help."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "remedy_back_pain",
+        "patterns": ["How to relieve back pain?", "Remedies for back pain?", "How can I reduce lower back pain?"],
+        "responses": [
+          "To relieve back pain, maintain proper posture, use hot or cold compresses, and engage in regular low-impact exercises such as swimming or yoga. Over-the-counter pain relievers can also be helpful."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "treat_nausea",
+        "patterns": ["How can I stop feeling nauseous?", "What helps with nausea?", "Home remedies for nausea?"],
+        "responses": [
+          "To treat nausea, try drinking ginger tea or peppermint tea, eat small, bland meals throughout the day, and avoid strong odors. Fresh air and staying hydrated can also help."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "relieve_earache",
+        "patterns": ["How to treat an earache?", "What's good for ear pain?", "Home remedies for ear pain?"],
+        "responses": [
+          "For an earache, you can try applying a warm cloth to the affected ear, use over-the-counter pain relievers, and ensure no water enters the ear. If symptoms persist, consult a doctor."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "manage_allergies",
+        "patterns": ["How can I manage allergies?", "Best ways to control allergy symptoms?", "Tips for allergy relief?"],
+        "responses": [
+          "To manage allergies, stay indoors during high pollen counts, use air purifiers, and keep windows closed. Over-the-counter antihistamines or nasal sprays can help relieve symptoms."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "relieve_constipation",
+        "patterns": ["How to relieve constipation?", "What can I do for constipation?", "Constipation remedies?"],
+        "responses": [
+          "To relieve constipation, increase your fiber intake with fruits, vegetables, and whole grains. Stay hydrated and consider a gentle laxative if needed. Regular exercise can also promote good bowel function."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "treat_dandruff",
+        "patterns": ["How to treat dandruff?", "What are good remedies for dandruff?", "How can I get rid of dandruff?"],
+        "responses": [
+          "To treat dandruff, use medicated shampoos containing ketoconazole, salicylic acid, or selenium sulfide. Regularly washing your hair and managing stress can also help reduce flaking."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "relieve_headache",
+        "patterns": ["How to relieve a headache?", "What are effective headache remedies?", "Best ways to get rid of a headache?"],
+        "responses": [
+          "To relieve a headache, try applying a cold compress to your forehead, rest in a quiet, dark room, and consider taking over-the-counter pain relievers like ibuprofen or acetaminophen. Hydration and relaxation techniques such as deep breathing may also help."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "treat_indigestion",
+        "patterns": ["How to treat indigestion?", "What helps with indigestion?", "Home remedies for indigestion?"],
+        "responses": [
+          "To treat indigestion, try drinking herbal teas like peppermint or ginger tea, eat smaller, more frequent meals, and avoid spicy or fatty foods. Over-the-counter antacids can provide relief. Avoid lying down immediately after eating."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "manage_anxiety",
+        "patterns": ["How can I manage anxiety?", "Best ways to deal with anxiety?", "Tips for anxiety relief?"],
+        "responses": [
+          "To manage anxiety, practice relaxation techniques such as deep breathing, meditation, or yoga. Maintain a healthy lifestyle with regular exercise, balanced diet, and sufficient sleep. Consider therapy or counseling for additional support."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "relieve_sore_throat",
+        "patterns": ["How to relieve a sore throat?", "What helps with a sore throat?", "Home remedies for sore throat?"],
+        "responses": [
+          "To relieve a sore throat, gargle with warm salt water, drink soothing liquids like herbal teas with honey or broth, and use throat lozenges or sprays. Rest your voice and avoid irritants like smoking or dry air."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "treat_diarrhea",
+        "patterns": ["How to treat diarrhea?", "What helps with diarrhea?", "Home remedies for diarrhea?"],
+        "responses": [
+          "To treat diarrhea, drink plenty of fluids to prevent dehydration, eat bland foods like bananas, rice, and toast, and consider over-the-counter medications like loperamide. Avoid dairy, caffeine, and spicy foods."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "manage_stress",
+        "patterns": ["How can I manage stress?", "Best ways to cope with stress?", "Tips for stress relief?"],
+        "responses": [
+          "To manage stress, try relaxation techniques such as deep breathing, meditation, or progressive muscle relaxation. Exercise regularly, maintain a healthy diet, and ensure sufficient sleep. Seeking support from friends, family, or a therapist can also be beneficial."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "improve_memory",
+        "patterns": ["How to improve memory?", "Best ways to enhance memory?", "Tips for better memory?"],
+        "responses": [
+          "To improve memory, engage in activities that stimulate the brain, such as puzzles, reading, or learning new skills. Get regular exercise, maintain a healthy diet rich in antioxidants and omega-3 fatty acids, and ensure sufficient sleep. Practice mnemonic techniques to aid memory recall."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "boost_immunity",
+        "patterns": ["How to boost immunity?", "Best ways to strengthen immune system?", "Tips for improving immunity?"],
+        "responses": [
+          "To boost immunity, maintain a balanced diet rich in fruits, vegetables, lean proteins, and whole grains. Stay hydrated, get regular exercise, and ensure sufficient sleep. Manage stress, avoid smoking, limit alcohol consumption, and practice good hygiene, including regular handwashing."
+        ],
+        "context_set": ""
+      }
+    ]
+  }
+  
